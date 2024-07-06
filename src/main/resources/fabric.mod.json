@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraft-plus",
+	"version": "${version}",
+	"name": "Minecraft +",
+	"description": "Adding More Blocks, items, Mobs e.t.c Into Minecraft for a new experience!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/minecraft-plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.isaacmods.minecraftplus.MinecraftPlus"
+		],
+		"client": [
+			"net.isaacmods.minecraftplus.MinecraftPlusClient"
+		],
+		"fabric-datagen": [
+			"net.isaacmods.minecraftplus.MinecraftPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"minecraft-plus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
